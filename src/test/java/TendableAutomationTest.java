@@ -65,11 +65,11 @@ public class TendableAutomationTest extends BrowserPage{
         assertTrue("Failed to sendKeys to 'Email' text box", contactUsPage.sendKeysToEmailTextBox(email));
         String jobRole = "Executive Board Member";
         assertTrue("Failed to select job role", contactUsPage.selectGivenJobRoleDropdownOption(jobRole));
-        Thread.sleep(4000);
+        Thread.sleep(4000);//Temporary solution to avoid 'Flakiness'
         assertTrue("Failed to find 'I Agree' radio button",contactUsPage.confirmIAgreeRadioIsVisible());
         assertTrue("Failed to click 'I Agree' button", contactUsPage.clickIAgreeRadio());
         assertTrue("Failed to click 'Submit' button", contactUsPage.clickSubmitButton());
-        Thread.sleep(2000);
+        Thread.sleep(2000);//Temporary solution to avoid 'Flakiness'
         String expectedMessage = "Sorry, there was an error submitting the form. Please try again.";
         assertEquals("Failed to match error message", expectedMessage, contactUsPage.getErrorMessage());
     }
