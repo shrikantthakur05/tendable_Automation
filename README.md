@@ -41,7 +41,7 @@ For this project, the test strategy includes:
 
  1. Test Case Design: Define test cases based on the application's functionality, ensuring comprehensive coverage.
  2. Page Object Model (POM): Implement the Page Object Model design pattern to maintain test scripts and web elements separately.
- 3. Test Data Preparation: Prepare necessary test data or utilize data generators for dynamic test scenarios.
+ 3. Test Data Preparation: Prepare necessary test data or utilize 'RandomStringUtils' for dynamic test data.
  4. Selenium WebDriver Setup: Configure Selenium WebDriver in 'BrowserPage' with desired capabilities and options.
  5. Test Execution: Write test scripts using Selenium WebDriver to interact with the application, perform actions, and make assertions.
  6. JUnit Assertions: Utilize JUnit assertions to validate test outcomes.
