@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Tendable_Automation" />
+        <module name="tendable_Automation" />
       </profile>
     </annotationProcessing>
   </component>
